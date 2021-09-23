@@ -1,0 +1,90 @@
+.redon{
+    border-radius: 100px;
+    margin: 10px;
+    background-color: rgb(158, 233, 60);
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.estadobase{
+    padding: 13px;
+    font-weight: bold;
+    color:white;
+    border-radius: 100px;
+    margin: 10px 20px;
+    text-align: center;
+}
+.red{
+    background-color: rgb(255, 79, 79);
+}
+.orange{
+    background-color: rgb(255, 173, 79);
+}
+.green{
+    background-color: rgb(50, 214, 0);
+}
+.yellow{
+    background-color: rgb(209, 57, 255);
+}
+.blue{
+    background-color: rgb(35, 185, 245);
+}
+.white{
+    background-color: rgb(102, 102, 102);
+}
+
+.tarjetaWrap{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+.tarjeta{
+    width: 450px;
+    /*height: 250px;*/
+    margin: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.nombre{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.titulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.clinic{
+    margin: 10px 30px;
+}
+.cc{
+    color: gray;
+    text-decoration: underline;
+}
+.cm{
+padding: 5px 0px;
+font-size: 20px;
+text-align: right;
+}
+.acciones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.acciones div{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    border:1px solid gray;
+    margin:5px;
+}
+.acciones div:hover{
+    background-color: rgb(192, 192, 192);
+    transition: background-color 0.3s;
+}

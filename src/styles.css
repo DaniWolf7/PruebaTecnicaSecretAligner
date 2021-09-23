@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
+ 
+ body {
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+ }
+ app-root{
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .pointer{
+    cursor: pointer;
+ }
+ .bluetton{
+   background-color: white;
+   border: 1px #0099ff solid;
+   padding: 15px;
+   margin: 5px 10px;
+   color: #0099ff;
+   font-weight: bold;
+   border-radius: 5px;
+   transition: background-color 0.3s, color 0.3s;
+}
+.bluetton:hover{
+   background-color: #0099ff;
+   color: white;
+   transition: background-color 0.3s, color 0.3s;
+}
+.redbutton{
+   background-color: white;
+   border: 1px #ff3e3e solid;
+   padding: 15px;
+   margin: 5px 10px;
+   color: #ff3e3e;
+   font-weight: bold;
+   border-radius: 5px;
+   transition: background-color 0.3s, color 0.3s;
+}
+.redbutton:hover{
+   background-color: #ff3e3e;
+   color: white;
+   transition: background-color 0.3s, color 0.3s;
+}

@@ -1,4 +1,13 @@
 # PruebaTecnica
+## Notas
+
+La primera tarea, de crear las diferentes vistas, los listados de pacientes y las funcionalidades de paginación, de busqueda me llevó entre 8 y 9 horas, en las que dedique el tiempo a crear los elementos HTML en los componentes pertinentes mientras los daba estilo con css y les daba las funcionalidades pedidas. Fue lo que mas tiempo me llevó fue el añadir los estilos a los css. implementé una forma de descarga de csv ademas de añadir una (comentada para que no funcione) que utilizé en otros proyectos que no requiere de librerias ni instalacion de extras 
+
+La segunda tarea, crear el modal con el formulario para el nuevo paciente, fue la que menos tiempo me llevó, 2-3 horas
+
+La tercera tarea, la opcional de generar un modal con una ficha y la posibilidad de generar un pdf me llevó entre 4-5 horas, no me centré mucho en la generación de la ficha como tal ya que dediqué mis esfuerzos en la generación del pdf lo cual hice implementando pdfMake.
+
+## Notas Fin
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
 
@@ -6,22 +15,3 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

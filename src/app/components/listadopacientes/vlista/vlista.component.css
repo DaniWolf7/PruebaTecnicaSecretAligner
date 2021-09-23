@@ -1,0 +1,97 @@
+table{
+    width: 100%;
+    border-collapse: collapse; 
+    
+}
+tr{
+    text-align: center;
+    height: 50px;
+}
+tr.first{
+ font-size: 15px;
+ color: grey;
+}
+.filas{
+    border: 1px solid rgb(212, 212, 212)!important;
+    
+}
+.nombre{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+.nombre:hover{
+background-color: rgb(159, 199, 201);
+}
+.redon{
+    border-radius: 100px;
+    margin: 10px;
+    background-color: rgb(158, 233, 60);
+    font-weight: bold;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.estadobase{
+    padding: 13px;
+    font-weight: bold;
+    color:white;
+    border-radius: 100px;
+    /*background-color: white;*/
+}
+.red{
+    background-color: rgb(255, 79, 79);
+}
+.orange{
+    background-color: rgb(255, 173, 79);
+}
+.green{
+    background-color: rgb(50, 214, 0);
+}
+.yellow{
+    background-color: rgb(209, 57, 255);
+}
+.blue{
+    background-color: rgb(35, 185, 245);
+}
+.white{
+    background-color: rgb(102, 102, 102);
+}
+.accionholder{
+    position: relative;
+}
+.accionTitle{
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.acciones{
+    display: none;
+    flex-direction: column;
+    margin: 10px;
+    position: absolute;
+    background-color: white;
+    bottom: -114px;
+    z-index: 10;
+    filter: drop-shadow(0 0 2px black);
+    
+}
+.acciones div{
+    border: 1px solid gray;
+    width: 135px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.acciones div:hover{
+    background-color: rgb(204, 204, 204);
+}
+.flexible{
+    display: flex;
+}
+
+

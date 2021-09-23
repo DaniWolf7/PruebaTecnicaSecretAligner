@@ -1,0 +1,96 @@
+h2, h1, p{
+    margin:0px;
+}
+.minheader{
+    background-color: rgb(238, 238, 238);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.minheader span{
+    margin: 0px 30px;
+    font-weight: bold;
+}
+.container{
+    margin: 25px;
+}
+.buscador{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 75px;
+}
+.title{
+    display: flex;
+    
+}
+.title div{
+    margin: 7px;
+    
+}
+.tit{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.icon i{
+    padding-top: 12px;
+    font-size: 20px;
+}
+.busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(238, 238, 238);
+    height: 40px;
+    width: 45%;
+    border-radius: 7px;
+    padding: 5px;
+    
+}
+.busqueda div{
+    margin: 0px 25px;
+}
+.busqueda input{
+    background-color: transparent;
+    border:0px;
+    width: 80%;
+    height: 45px;
+}
+.botones, .herramientas{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.herramientas{
+    margin: 20px;
+}
+.herrselect{
+    background-color: rgb(223, 223, 223);
+}
+.herramientas div{
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.paginador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.paginador div{
+    padding: 15px;
+    background-color: white;
+    color: #0099ff;
+
+    
+
+}
+.backblue{
+    background-color: #0099ff!important;
+    color: white!important;
+}

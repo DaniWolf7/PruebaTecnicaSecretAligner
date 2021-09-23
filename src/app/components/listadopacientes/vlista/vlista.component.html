@@ -1,0 +1,21 @@
+<table>
+    <tr class="first">
+        <td>Nombre y apellidos</td>
+        <td>Clínica</td>
+        <td>Objetivo tratamiento</td>
+        <td>Estado</td>
+        <td>Acciones</td>
+    </tr>
+    <tr class="filas" *ngFor="let paciente of pacientesArr | filtertable:config; let i = index">
+        <td >
+            <div class="nombre" (click)="verdetalle(paciente)">
+                <div class="redon pointer"  >{{paciente.iniciales}}</div>
+                <div>{{paciente.datos_paciente.nombre}} {{paciente.datos_paciente.apellidos}}</div>
+            </div>
+        </td>
+        <td>{{paciente.ficha_dental.clinica}}</td>
+        <td>{{paciente.ficha_dental.objetivo_tratamiento}}</td>
+        <td><div class="estadobase" [class]="checkEstado( paciente.ficha_dental.estado )">{{paciente.ficha_dental.estado}}</div></td>
+        <td class="accionholder" (mouseleave)="nomostrar(i)"><div class="accionTitle pointer" (click)="mostrar(i)">Acciones</div><div class="acciones pointer" [attr.id]="'accionesel_' + i" #accionesel_{{i}}><div>Editar</div><div>Finalizar</div><div>Borrar</div></div></td>
+    </tr>
+</table>

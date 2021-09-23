@@ -1,0 +1,38 @@
+<div class="superior">
+    <div class="imgcontainer"><img src="../../../assets/elusuario.jpg" class="img"></div>
+    <div class="namescontainer">
+        <div class="bb">{{fichapacienteobj.ficha_dental.clinica}}</div>
+        <div class="bb">{{fichapacienteobj.datos_paciente.nombre}}</div>
+        <div class="bb">{{fichapacienteobj.datos_paciente.apellidos}}</div>
+        <div class="flexi">
+            <div class="mm">{{fichapacienteobj.datos_paciente.sexo}}</div>
+            <div class="nd">{{fichapacienteobj.datos_paciente.fecha_nacimiento}}</div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="ht">Dientes No Mover</div>
+    <div class="superior">
+        <div class="imgcontainer"><img src="../../../assets/maxilar.jpg" class="img2"></div>
+    <div class="namescontainer">
+        
+        <div  class="bb">{{fichapacienteobj.ficha_dental.estado}}</div>
+        <div  class="bb">{{fichapacienteobj.ficha_dental.objetivo_tratamiento}}</div>
+        <div>RECORTE DE ALINEADORES</div>
+        <div>{{fichapacienteobj.ficha_dental.otros_datos.recorte_alineadores}}</div>
+        <div>¿Desea alineadores pasivos?</div>
+        <div>{{fichapacienteobj.ficha_dental.otros_datos.alineadores_pasivos ? 'Si':'No'}}</div>
+        <div>¿Desea SecretRetainer al finalizar?</div>
+        <div>{{fichapacienteobj.ficha_dental.otros_datos.secretretainer ? 'Si':'No'}}</div>
+
+        
+        
+    </div>
+    </div>
+
+</div>
+<div class="buttons"><button (click)="generarPDF()"  class="button">
+    Generar PDF</button>
+    <button (click)="cerrar()"  class="button">
+        Cerrar</button></div>

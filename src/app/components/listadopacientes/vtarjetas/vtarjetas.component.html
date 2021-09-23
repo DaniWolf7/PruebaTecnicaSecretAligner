@@ -1,0 +1,20 @@
+<div class="tarjetaWrap">
+<div class="tarjeta" *ngFor="let paciente of pacientesArr | filtertable:config; let i = index">
+    <div class="nombre">
+        <div class="redon">{{paciente.iniciales}}</div>
+        <div class="titulo">{{paciente.datos_paciente.nombre}} {{paciente.datos_paciente.apellidos}}</div>
+    </div>
+    <div class="estado">
+        <div class="clinic">
+            <div class="cc">{{paciente.ficha_dental.clinica}}</div>
+            <div class="cm">{{paciente.ficha_dental.objetivo_tratamiento}}</div></div>
+        <div>
+            <div class="estadobase" [class]="checkEstado( paciente.ficha_dental.estado )">{{paciente.ficha_dental.estado}}</div>
+        </div>
+    </div>
+    <div class="acciones">
+        <div>Editar</div><div>Finalizar</div><div>Borrar</div>
+    </div>
+</div>
+
+</div>

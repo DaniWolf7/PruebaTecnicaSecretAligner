@@ -1,0 +1,76 @@
+div{
+    padding: 5px;
+}
+.superior div{
+    font-size: 20px;
+}
+.img{
+    width: 200px;
+}
+.img2{
+    width: 300px;
+}
+.imgcontainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.superior{
+    display: flex;
+}
+.superior>div{
+    width: 50%;
+    border:1px solid black
+}
+.flexi{
+    display: flex;
+    justify-content: space-between;
+}
+.flexi div{
+    width: 50%;
+    height: 100%;
+
+}
+.flexicol{
+    display: flex;
+    flex-direction: column;
+}
+.namescontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.bb{
+    border-bottom: 1px solid black;
+}
+.mm{
+    border-right: 1px solid black;
+}
+.button{
+    padding: 20px;
+    background-color: white;
+    border:solid 1px grey;
+    color:black;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+.button:hover{
+    background-color: grey;
+    color:white;
+   transition: background-color 0.3s, color 0.3s;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.nd{
+    text-align: center;
+}
+.ht{
+    
+    padding: 0px;
+}

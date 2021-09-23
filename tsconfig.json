@@ -19,7 +19,10 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    //added this two to import directly from file
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports":true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

@@ -1,0 +1,29 @@
+<div class="minheader"><span>Listado de Pacientes</span></div>
+<div class="container">
+    <div class="superior">
+        <div class="buscador">
+            <div class="title">
+                <div class="icon"><i class="far fa-id-card"></i></div>
+                <div class="tit"><h2>Listado de Pacientes</h2><p>Visualización de pacientes</p></div>
+            </div>
+            <div class="busqueda">
+                <div><i class="fas fa-search"></i></div>
+                <input type="text" [(ngModel)]="config.text" (ngModelChange)="update()" placeholder="Buscar...">
+            </div>
+        </div>
+        <div class="botones">
+            <div class="bluetton pointer" (click)="openNewPaciente()"><i class="fas fa-plus"></i> Nuevo paciente</div>
+            <div class="bluetton pointer" (click)="exportCSV()"><i class="fas fa-file-download"></i> Descargar CSV</div>
+        </div>
+        <div class="herramientas">
+            <div class="pointer" [class]="{'herrselect': config.vista == 'tabla'}" (click)="changevista('tabla')"><i class="fas fa-bars"></i></div>
+            <div class="pointer" [class]="{'herrselect': config.vista == 'tarjetas'}" (click)="changevista('tarjetas')"><i class="fas fa-table"></i></div>
+            <div class="pointer" [class]="{'herrselect': config.maxnum == 5}" (click)="changeNPages(5)">5</div>
+            <div class="pointer" [class]="{'herrselect': config.maxnum == 10}" (click)="changeNPages(10)">10</div>
+            <div class="pointer" [class]="{'herrselect': config.maxnum == 15}" (click)="changeNPages(15)">15</div>
+        </div>
+    </div>
+    <app-vlista *ngIf="config.vista == 'tabla'" [pacientesArr]="pacientesArr" [config]="config" (verpaciente)="verpaciente($event)"></app-vlista>
+    <app-vtarjetas *ngIf="config.vista == 'tarjetas'" [pacientesArr]="pacientesArr" [config]="config"></app-vtarjetas>
+    <div  class="paginador"><div (click)="changetoPage(i+1)"  class="pointer" [class]="{'backblue': (i+1) == config.pag}" *ngFor="let a of paginas; let i = index">{{i+1}}</div></div>
+</div>
